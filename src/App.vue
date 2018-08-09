@@ -4,6 +4,7 @@
     <div>
       <router-link to="/">Go to HelloWorld</router-link>
       <router-link to="/chart">Go to chart</router-link>
+       <router-link to="/todolist">Go to todolist</router-link>
     </div>
     <router-view/>
   </div>
