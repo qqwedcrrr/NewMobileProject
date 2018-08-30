@@ -4,8 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import store from './vuex/store'
 import router from './router'
-
+import FastClick from 'fastclick'
+import './config/rem'
 Vue.config.productionTip = false
+
+
+
+if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(document.body);
+    }, false);
+}
 
 
 /* eslint-disable no-new */
