@@ -2,7 +2,7 @@
 	<div>
 		<div>
 		 <ul>
-		 	<li v-for="item in count" key="item.id" :style="{textDecoration:item.middleline}" >
+		 	<li v-for="item in extraitem" key="item.id" :style="{textDecoration:item.middleline}" >
 		 		<div v-on:click.stop="itemclick(item.id)">
 		 		{{item.value}}
 		 		</div>
@@ -18,6 +18,7 @@
 </template>
 
 <script type="text/javascript">
+	import {mapState, mapMutations} from 'vuex'
 	export default {
 		name:'todolist',
 		data(){
@@ -48,15 +49,27 @@
 				newitem:null
 			}
 		},
-		
+		computed:{
+			...mapState([
+                'add_item'
+            ]),
+            extraitem:function(){
+            	console.log('123132',this.add_item)
+            	return this.count.concat(this.add_item)
+            }   
+		},
 		methods:{
+			...mapMutations([
+                'ADD_TODO'
+            ]),
 			onclick:function(){
 				let item = {
 					value:this.additem,
 					id:this.count[this.count.length-1].id+1,
 					middleline:'none'
 				}
-				this.count.push(item)
+				this.ADD_TODO(item)
+				console.log(this)
 				this.additem = null
 			},
 			itemclick: function(id){
