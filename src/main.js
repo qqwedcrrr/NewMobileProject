@@ -6,8 +6,9 @@ import store from './vuex/store'
 import router from './router'
 import FastClick from 'fastclick'
 import './config/rem'
-Vue.config.productionTip = false
 
+
+Vue.config.productionTip = false
 
 
 if ('addEventListener' in document) {
@@ -23,5 +24,5 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>'
+  render: h => h(App)
 })

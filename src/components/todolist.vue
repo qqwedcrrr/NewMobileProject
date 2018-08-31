@@ -10,17 +10,22 @@
 		 	</li>
 		 </ul>
 		</div>
-		<input type="text" v-model="additem" />
+		<XInput placeholder="请输入内容" v-model="additem"></XInput>
 	<div>
-		<button @click="onclick">{{newitem}}</button>
+		<XButton type="primary" @click.native="onclick">ADD_ITEM</XButton>
 	</div>
 	</div>
 </template>
 
 <script type="text/javascript">
 	import {mapState, mapMutations} from 'vuex'
+	import { XButton,XInput  } from 'vux'
 	export default {
 		name:'todolist',
+		components: {
+    		XButton,
+    		XInput
+  		},
 		data(){
 			return{
 				count: [
