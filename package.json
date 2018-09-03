@@ -17,14 +17,20 @@
     "echarts": "^4.1.0",
     "element-ui": "^2.4.6",
     "es2015": "0.0.0",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> aeccd680188620212a942bb0e9c6b7ab31a3842c
     "fastclick": "^1.0.6",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
+=======
+>>>>>>> parent of 036144c... new update
+=======
+>>>>>>> parent of a54e8cb... new update
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "vux": "^2.9.2",
-    "vux-loader": "^1.2.9"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
