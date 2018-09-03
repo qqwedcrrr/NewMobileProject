@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import store from './vuex/store'
 import router from './router'
+<<<<<<< HEAD
 import FastClick from 'fastclick'
 import './config/rem'
 
@@ -16,6 +17,10 @@ if ('addEventListener' in document) {
         FastClick.attach(document.body);
     }, false);
 }
+=======
+
+Vue.config.productionTip = false
+>>>>>>> parent of 036144c... new update
 
 
 /* eslint-disable no-new */
