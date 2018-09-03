@@ -6,7 +6,6 @@
         "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
       }
     }],
-    "stage-2",
     "stage-2"
   ],
 <<<<<<< HEAD
@@ -20,6 +19,7 @@
     ]
   ],
 =======
+  "plugins": ["transform-vue-jsx", "transform-runtime"],
 >>>>>>> aeccd680188620212a942bb0e9c6b7ab31a3842c
   "env": {
     "test": {

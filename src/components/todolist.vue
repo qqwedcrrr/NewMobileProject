@@ -15,6 +15,9 @@
 	<div>
 		<el-button type="primary" @click.native="onclick">ADD_ITEM</el-button>
 =======
+		<input type="text" v-model="additem" />
+	<div>
+		<button @click="onclick">{{newitem}}</button>
 >>>>>>> aeccd680188620212a942bb0e9c6b7ab31a3842c
 	</div>
 	</div>
