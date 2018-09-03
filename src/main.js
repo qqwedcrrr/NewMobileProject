@@ -5,7 +5,11 @@ import App from './App'
 import store from './vuex/store'
 import router from './router'
 import FastClick from 'fastclick'
+import { Button, Input } from 'element-ui';
 import './config/rem'
+
+	Vue.use(Button)
+	Vue.use(Input)	
 
 
 Vue.config.productionTip = false
@@ -16,7 +20,7 @@ if ('addEventListener' in document) {
         FastClick.attach(document.body);
     }, false);
 }
-
+ 
 
 /* eslint-disable no-new */
 new Vue({

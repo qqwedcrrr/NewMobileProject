@@ -10,22 +10,18 @@
 		 	</li>
 		 </ul>
 		</div>
-		<XInput placeholder="请输入内容" v-model="additem"></XInput>
+		<el-input placeholder="请输入内容" v-model="additem" clearable></el-input>
 	<div>
-		<XButton type="primary" @click.native="onclick">ADD_ITEM</XButton>
+		<el-button type="primary" @click.native="onclick">ADD_ITEM</el-button>
 	</div>
 	</div>
 </template>
 
 <script type="text/javascript">
-	import {mapState, mapMutations} from 'vuex'
-	import { XButton,XInput  } from 'vux'
+	import {mapState, mapMutations} from 'vuex'	
+	import { Button, Input } from 'element-ui';
 	export default {
 		name:'todolist',
-		components: {
-    		XButton,
-    		XInput
-  		},
 		data(){
 			return{
 				count: [
@@ -59,7 +55,6 @@
                 'add_item'
             ]),
             extraitem:function(){
-            	console.log('123132',this.add_item)
             	return this.count.concat(this.add_item)
             }   
 		},
@@ -96,3 +91,8 @@
 		}
 	}
 </script>
+<style lang="less" scoped>
+button{
+	width: 100%;
+}
+</style>
