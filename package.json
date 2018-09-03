@@ -13,19 +13,21 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "echarts": "^4.1.0",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "fastclick": "^1.0.6",
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
 =======
 >>>>>>> parent of 036144c... new update
+=======
+    "element-ui": "^2.4.6",
+    "fastclick": "^1.0.6",
+>>>>>>> parent of a54e8cb... new update
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1",
-    "vux": "^2.9.2",
-    "vux-loader": "^1.2.9"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -34,7 +36,6 @@
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-jest": "^21.0.2",
     "babel-loader": "^7.1.1",
-    "babel-plugin-component": "^1.1.1",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",

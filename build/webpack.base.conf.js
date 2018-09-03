@@ -2,7 +2,6 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
-const vuxLoader = require('vux-loader')
 const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
@@ -20,7 +19,7 @@ const createLintingRule = () => ({
   }
 })
 
-const webpackConfig = {
+module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
@@ -75,11 +74,7 @@ const webpackConfig = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
-      {
-        test: /\.less$/,
-        loader: "style-loader!css-loader!less-loader",
-      },
+      }
     ]
   },
   node: {
@@ -95,7 +90,3 @@ const webpackConfig = {
     child_process: 'empty'
   }
 }
-
-module.exports = vuxLoader.merge(webpackConfig, {
-  plugins: ['vux-ui']
-})

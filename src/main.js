@@ -7,9 +7,8 @@ import router from './router'
 <<<<<<< HEAD
 import FastClick from 'fastclick'
 import './config/rem'
-
-
 Vue.config.productionTip = false
+
 
 
 if ('addEventListener' in document) {
@@ -29,5 +28,5 @@ new Vue({
   router,
   store,
   components: { App },
-  render: h => h(App)
+  template: '<App/>'
 })
