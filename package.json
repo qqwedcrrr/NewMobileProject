@@ -27,6 +27,8 @@
 =======
 >>>>>>> parent of 036144c... new update
 =======
+    "element-ui": "^2.4.6",
+    "fastclick": "^1.0.6",
 >>>>>>> parent of a54e8cb... new update
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
