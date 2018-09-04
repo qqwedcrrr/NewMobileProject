@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img class="logoimg" src="./assets/logo.png">
     <div>
       <router-link to="/">Go to HelloWorld</router-link>
       <router-link to="/chart">Go to chart</router-link>
@@ -23,6 +23,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10px;
+}
+.logoimg{
+  width: 150px;
+  height: 150px;
 }
 </style>

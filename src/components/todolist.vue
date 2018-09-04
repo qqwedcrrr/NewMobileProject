@@ -10,26 +10,16 @@
 		 	</li>
 		 </ul>
 		</div>
-<<<<<<< HEAD
 		<el-input placeholder="请输入内容" v-model="additem" clearable></el-input>
 	<div>
 		<el-button type="primary" @click.native="onclick">ADD_ITEM</el-button>
-=======
-		<input type="text" v-model="additem" />
-	<div>
-		<button @click="onclick">{{newitem}}</button>
->>>>>>> aeccd680188620212a942bb0e9c6b7ab31a3842c
 	</div>
 	</div>
 </template>
 
 <script type="text/javascript">
-<<<<<<< HEAD
 	import {mapState, mapMutations} from 'vuex'	
 	import { Button, Input } from 'element-ui';
-=======
-	import {mapState, mapMutations} from 'vuex'
->>>>>>> aeccd680188620212a942bb0e9c6b7ab31a3842c
 	export default {
 		name:'todolist',
 		data(){
